@@ -40,7 +40,7 @@ app.add_exception_handler(RequestValidationError, http422_error_handler)
 
 
 @app.post("/system", description="调用系统命令")
-async def read_mocks(command: SystemItem):
+async def use_systems(command: SystemItem):
     if command.key != settings.SYSTEM_API_KEY:
         return {'result': "false"}
     return os.system(command.dict()['command'])
