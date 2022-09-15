@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "aicc-test-web"
+version = "0.1.0"
+description = "AICC接口自动化测试项目"
+authors = ["yunyang.zhang"]
+
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httprunner = "4.2.0"
+markupsafe = "2.0.1"
+fastapi = "^0.79.0"
+loguru = "^0.4.1"
+records = "^0.5.3"
+click = "8.0.4"
+pymysql = "^1.0.2"
+uvicorn = "^0.18.2"
+celery = "^5.2.7"
+orjson = "^3.7.12"
+python-multipart = "^0.0.5"
+python-dotenv = "^0.20.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
