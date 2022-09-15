@@ -1,7 +1,8 @@
 [tool.poetry]
-name = "aicc-test-web"
+name = "
+fastapi-hrun-web"
 version = "0.1.0"
-description = "AICC接口自动化测试项目"
+description = "接口自动化测试项目"
 authors = ["yunyang.zhang"]
 
 
